@@ -3,7 +3,6 @@ package org.python.util;
 
 
 import org.python.core.Py;
-
 import org.python.core.PyBuiltinFunctionSet;
 import org.python.core.PyException;
 import org.python.core.PyObject;
@@ -59,7 +58,7 @@ public class InteractiveConsole extends InteractiveInterpreter {
      * first interaction; by default it prints "Jython <version> on <platform>".
      */
     public void interact() {
-        interact(getDefaultBanner());
+        interact(getDefaultBanner()); //
     }
 
     public static String getDefaultBanner() {
@@ -87,7 +86,7 @@ public class InteractiveConsole extends InteractiveInterpreter {
                 break;
             }
             more = push(line);
-        }
+        } 
     }
 
     /**
