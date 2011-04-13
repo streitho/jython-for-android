@@ -248,7 +248,7 @@ public class jython
                 interp.cflags.encoding = opts.encoding;
             }
             try {
-                interp.interact(null);
+                interp.interact(); //null
             } catch (Throwable t) {
                 Py.printException(t);
             }

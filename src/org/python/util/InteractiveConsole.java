@@ -72,7 +72,7 @@ public class InteractiveConsole extends InteractiveInterpreter {
             write("\n");
         }
         // Dummy exec in order to speed up response on first command
-        //exec("2");
+        exec("2");
         // System.err.println("interp2");
         boolean more = false;
         while(true) {
