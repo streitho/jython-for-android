@@ -355,8 +355,8 @@ public class FixMe {
 		//load the name.apk file
 		getClassByName(apppath, "org/python/core/PyFunctionTable");
 		getClassByName(apppath, "org/python/core/PyRunnable");
-		Class<?> c = getClassByName(tmpdirpath + name + "/" + name + ".apk",
-				name.replace('.', '/'));
+		Class<?> c = getClassByName(tmpdirpath + name + "/" + name + ".apk");
+				//name.replace('.', '/'));
 		getClassByName(apppath, "org/python/core/PyFunctionTable");
 		return c;
 	}
